@@ -224,6 +224,74 @@ a {
   grid-row: 10;
 }
 
+/* MAIN */
+
 main {
   background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 2rem 1rem;
+}
+
+/* MAIN PROJECTS CARDS */
+
+.projects-container h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 225px;
+  width: 400px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.yellow-line {
+  width: 0.5rem;
+  height: 100%;
+  background-color: #f0b429;
+  flex-shrink: 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.content {
+  margin: 2rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.content h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.content p {
+  font-weight: 300;
+  color: #636363;
+  margin-top: 0.25rem;
+}
+
+.interactions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0 2rem 2.5rem 1rem;
+  color: #333333;
 }
