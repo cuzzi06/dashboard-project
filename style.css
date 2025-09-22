@@ -230,6 +230,7 @@ main {
   background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
   padding: 2rem 1rem;
 }
 
@@ -243,17 +244,17 @@ main {
 
 .card-container {
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
   background-color: white;
   display: flex;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   height: 225px;
-  width: 400px;
+  width: auto;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -294,4 +295,47 @@ main {
   gap: 2rem;
   margin: 0 2rem 2.5rem 1rem;
   color: #333333;
+}
+
+/* EXTRA INFO */
+
+.announcements h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.announcement-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.announcement-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.announcement-item:first-child {
+  padding-top: 0;
+}
+
+.announcement-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.announcement-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.announcement-card p {
+  color: #636363;
+  margin-top: 0.25rem;
 }
